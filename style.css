@@ -645,6 +645,12 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     border-left: 3px solid #666666;
   }
   .notice-strong strong { color: #111111; }
+  .action-link, .action-primary {
+    background: #ffffff;
+    color: #111111;
+    border-color: #999999;
+    box-shadow: none;
+  }
   .cards { display: block; }
   .card {
     margin: 0 0 0.7rem;
