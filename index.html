@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#322e2a">
   <title>CSV 주문 검증·요약 데모 | 장성필</title>
   <meta name="description" content="합성 주문 CSV로 입력 검증, 정상행 추출, 오류 보고서와 품목별 요약을 직접 확인하는 브라우저 데모입니다. 장성필의 자체 제작 작업물입니다.">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-ui-preset="freelance-proposal">
   <a class="skip-link" href="#demo">데모로 바로가기</a>
 
   <header class="site-header">
@@ -20,22 +21,35 @@
   <main class="wrap" id="main">
 
     <section class="hero" aria-labelledby="hero-title">
-      <p class="badge">온라인 작동 데모 · 합성 데이터 전용</p>
-      <h1 id="hero-title">반복되는 파일 정리부터 문의·후속업무까지,<br>한 가지 업무를 작동하는 도구로 만듭니다.</h1>
-      <p class="lede">입력 형식과 업무 범위를 확인한 뒤, 작은 단위의 도구로 만들어 드립니다. 상담은 파일 구조 확인 → 범위 합의 → 합성/익명 샘플 검증 → 구축·검수 → 가이드 인계 순서로 진행합니다.</p>
-      <p class="notice-strong" role="note">
-        기본 제공 샘플과 화면 예시의 수치는 직접 만든 <strong>합성 데이터</strong>입니다.
-        실제 고객 사례나 매출 실적이 아닙니다. 시험 입력에도 고객 정보와 비밀 자료는 사용하지 마세요.
-      </p>
-      <div class="hero-actions">
-        <a class="action-link action-primary" href="#demo">데모 직접 실행</a>
-        <a class="action-link" href="https://topmate.io/seongpil_jang" target="_blank" rel="noopener noreferrer">작업자 프로필 보기</a>
+      <div class="hero-copy">
+        <p class="eyebrow">WORKING DEMO · 자체 제작 포트폴리오</p>
+        <h1 id="hero-title">반복되는 파일 정리부터 문의·후속업무까지,<br>한 가지 업무를 작동하는 도구로 만듭니다.</h1>
+        <p class="lede">입력 형식과 업무 범위를 확인한 뒤, 작은 단위의 도구로 만들어 드립니다. 상담은 파일 구조 확인 → 범위 합의 → 합성/익명 샘플 검증 → 구축·검수 → 가이드 인계 순서로 진행합니다.</p>
+        <div class="hero-actions">
+          <a class="action-link action-primary" href="#demo">데모 직접 실행</a>
+          <a class="action-link" href="https://topmate.io/seongpil_jang" target="_blank" rel="noopener noreferrer">작업자 프로필 보기</a>
+        </div>
       </div>
+      <aside class="hero-card" aria-label="데모 범위와 데이터 안내">
+        <p class="card-label">DEMO AT A GLANCE</p>
+        <strong>CSV 한 파일의 오류와 합계를 한 화면에서 확인합니다.</strong>
+        <ul>
+          <li>헤더·날짜·수량·단가 검증</li>
+          <li>정상행과 오류행 구분</li>
+          <li>품목별 요약과 CSV 내보내기</li>
+        </ul>
+        <p class="notice-strong" role="note">기본 샘플은 직접 만든 <strong>합성 데이터</strong>입니다. 실제 고객 사례나 매출 실적이 아닙니다. 시험 입력에도 고객 정보와 비밀 자료는 사용하지 마세요.</p>
+      </aside>
     </section>
 
     <section class="section" aria-labelledby="solutions-title">
-      <h2 id="solutions-title">솔루션 카드</h2>
-      <p class="section-lede">표시된 상태는 현재 준비 상황을 구분하기 위한 것이며, 이 페이지에서 실제로 동작하는 기능은 <strong>작동 데모</strong>로 표시된 항목뿐입니다.</p>
+      <div class="section-head">
+        <span class="section-num">01 / SCOPE</span>
+        <div>
+          <h2 id="solutions-title">제공 범위와 준비 상태</h2>
+          <p class="section-lede">이 페이지에서 실제로 동작하는 기능은 <strong>작동 데모</strong>로 표시된 항목뿐입니다.</p>
+        </div>
+      </div>
       <ul class="cards">
         <li class="card card-working">
           <p class="card-status status-working">이번 작동 데모</p>
@@ -57,8 +71,13 @@
     </section>
 
     <section class="section demo" id="demo" aria-labelledby="demo-title">
-      <h2 id="demo-title">작동 데모 · CSV 주문 검증·매출 요약</h2>
-      <p class="section-lede">입력한 CSV는 이 브라우저 안에서만 처리됩니다. 외부로 전송하지 않고, 자동 저장하거나 브라우저 저장소(localStorage)에 보관하지 않습니다. 원본 파일은 수정하지 않습니다.</p>
+      <div class="section-head">
+        <span class="section-num">02 / LIVE DEMO</span>
+        <div>
+          <h2 id="demo-title">CSV 주문 검증·매출 요약</h2>
+          <p class="section-lede">입력한 CSV는 이 브라우저 안에서만 처리됩니다. 외부로 전송하지 않고, 자동 저장하거나 브라우저 저장소(localStorage)에 보관하지 않습니다. 원본 파일은 수정하지 않습니다.</p>
+        </div>
+      </div>
 
       <div class="limits" role="note">
         <p><strong>입력 제한</strong> · 파일 크기 1MB 이하 · 데이터 행 최대 5,000행</p>
@@ -102,7 +121,10 @@
     </section>
 
     <section class="section" aria-labelledby="process-title">
-      <h2 id="process-title">상담·구축 흐름</h2>
+      <div class="section-head">
+        <span class="section-num">03 / PROCESS</span>
+        <div><h2 id="process-title">상담·구축 흐름</h2></div>
+      </div>
       <ol class="process">
         <li><strong>파일 구조 확인</strong> — 사용하는 파일의 열 이름과 의미를 확인합니다.</li>
         <li><strong>범위 합의</strong> — 이번 작업에서 다룰 업무와 제외할 업무를 정합니다.</li>
@@ -113,7 +135,10 @@
     </section>
 
     <section class="section" aria-labelledby="request-title">
-      <h2 id="request-title">구축 요청서 템플릿</h2>
+      <div class="section-head">
+        <span class="section-num">04 / NEXT STEP</span>
+        <div><h2 id="request-title">구축 요청서 템플릿</h2></div>
+      </div>
       <p>업무 내용, 입력 열, 원하는 결과, 처리 빈도, 실행 환경, 희망 기한, 예산 범위를 직접 정리할 수 있는 텍스트 템플릿입니다.</p>
       <div class="controls">
         <button type="button" id="btn-request-template">요청서 내려받기</button>
