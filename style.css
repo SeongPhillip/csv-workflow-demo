@@ -136,7 +136,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   body { font-size: 15px; }
   .header-inner { align-items: flex-start; flex-direction: column; padding-block: 0.8rem; }
   .hero { padding: 2.8rem 0 2.4rem; }
-  h1 { font-size: clamp(2.1rem, 10vw, 2.9rem); }
+  h1 { font-size: clamp(2rem, 8vw, 2.4rem); }
   .section { padding: 2.8rem 0; }
   .section-head { display: block; }
   .section-num { display: block; margin-bottom: 0.6rem; }
