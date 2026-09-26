@@ -6,4 +6,4 @@
 
 사이트: https://seongphillip.github.io/csv-workflow-demo/
 
-상담·프로필: https://topmate.io/seongpil_jang
+작업자 프로필: https://topmate.io/seongpil_jang
